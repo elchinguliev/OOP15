@@ -13,13 +13,13 @@ public:
 };
 class Square : public Shape {
 public:
-    float calculateArea() {
+    float calculateArea() override {
         return dimension * dimension;
     }
 };
 class Circle : public Shape {
 public:
-    float calculateArea() {
+    float calculateArea() override{
         return 3.14 * dimension * dimension;
     }
 };
